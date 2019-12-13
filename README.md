@@ -16,5 +16,8 @@
       La colonne Edit permet d'ouvrir le formulaire de modification (Seul le droit de l'utilisateur est modifiable pour l'instant). 
       Pour finir le bouton en dessous du DataTable permet d'ouvrir le formulaire qui ajoutera un utilisateur
 
-
+> ### Onglet Forum :
+> Je n'est clairement pas eu le temps de finir tout ce que je voulais faire ! Mais concrètement si un utilisateur est connecté au site il peut :
+> - Cliquer sur les noms des Forums dans la liste
+> - Cela va aller recuperer tout les messages qui sont liés a ce forum et les afficher dans l'encart a gauche (via une jointure)
 
