@@ -63,7 +63,7 @@ else if (isset($_POST['data']) && isset($_POST['action']) && $_POST['action'] ==
 }
 else if (isset($_POST['data']) && isset($_POST['action']) && $_POST['action'] == 'add_row'){
     // Ajoute un utilisateur dans la bbd
-    $sql = "SELECT pseudo FROM dbweb.inf_user WHERE pseudo = '" . $_POST['data']['pseudo'] . "'";
+    $sql = "SELECT pseudo FROM dbweb.inf_user WHERE pseudo = '" . htmlspecialchars($_POST['data']['pseudo']) . "'";
     try {
         $sql_req = $bdd->prepare($sql, array(PDO::ATTR_CURSOR, PDO::CURSOR_SCROLL));
         $sql_req->execute();
@@ -74,7 +74,6 @@ else if (isset($_POST['data']) && isset($_POST['action']) && $_POST['action'] ==
     }
 
     if(count($arr_pseudo) == 1) {
-
         $str_pswrd = password_hash(htmlspecialchars($_POST['data']['password']), PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO dbweb.inf_user (pseudo,password,mail,droit) 

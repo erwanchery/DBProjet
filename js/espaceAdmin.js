@@ -109,11 +109,11 @@ $(function() {
             }
         });
 
-        if($('#droit').val() > 2 || $('#droit').val() < 0) {
+        if(! $.isNumeric($('#droit').val()) || $('#droit').val() > 2 || $('#droit').val() < 1) {
             $('#msgErreur2').html("Erreur : Valeur du champ " + $('#droit').attr('name') + " incorrect"); 
             bln_form = false;
         }
-
+            
         if(bln_form) {
             obj_data = {
                 "pseudo" : $('#pseudo2').val(),

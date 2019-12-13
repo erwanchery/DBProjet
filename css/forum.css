@@ -1,0 +1,59 @@
+table {
+    width: 50%;
+    margin: auto;
+}
+
+#forumT {
+    height: 800px;
+    background-color: #555;
+    display: flex;
+    width: 100%;
+}
+
+#forum {
+    width: 60%;
+    padding-top: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+  
+#forum td, #forum th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#forum tr:nth-child(){
+    background-color: #f2f2f2;
+}
+  
+#forum tr:hover {
+    background-color: #ddd;
+}
+  
+#forum th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.msg {
+    background-color: rgb(221, 219, 219);
+    margin : 10px;
+    padding : 10px;
+    border-radius: 9%;
+    width: 90%;
+}
+
+#listMessage {
+    height: 80%;
+    padding: 20px;
+    border: 1px white solid;
+    width: 20%;
+    margin-left: 3%;
+    margin-top: 20px;
+    border-radius: 5%;
+    overflow: auto;
+    box-shadow: 9px 11px 4px 1px rgba(232,220,232,1);
+}

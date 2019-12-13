@@ -12,8 +12,8 @@ session_start();
             <li><a href="premierPas.php">PREMIER PAS</a></li>
             <li><a href="wiki.php">WIKI</a>
             <ul>
-                <li><a href="index.php/#videoPresentation">À PROPOS</a></li>
-                <li><a href="index.php/#installation">INSTALLATION</a></li>
+                <li><a href="index.php#videoPresentation">À PROPOS</a></li>
+                <li><a href="index.php#installation">INSTALLATION</a></li>
                 <li><a href="premierPas.php">PREMIER PAS</a></li>
                 <li><a href="forum.php">FORUM</a></li>
             </ul>
@@ -22,8 +22,8 @@ session_start();
             <li><a href="#" class="connexion">PREMIER PAS</a></li>
             <li><a href="#" class="connexion">WIKI</a>
             <ul>
-                <li><a href="index.php/#videoPresentation">À PROPOS</a></li>
-                <li><a href="index.php/#installation">INSTALLATION</a></li>
+                <li><a href="index.php#videoPresentation">À PROPOS</a></li>
+                <li><a href="index.php#installation">INSTALLATION</a></li>
                 <li><a href="#" class="connexion">PREMIER PAS</a></li>
                 <li><a href="#" class="connexion">FORUM</a></li>
             </ul>
