@@ -1,6 +1,6 @@
-#READ ME du projet de base de données
+# READ ME du projet de base de données
 
-##Fonctionnalitées implementés :
+## Fonctionnalitées implementés :
 
 > ### Gestion des droits des utilisateurs :
 > Il y a 3 niveaux de droit : 
