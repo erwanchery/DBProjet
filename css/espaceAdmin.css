@@ -1,0 +1,59 @@
+#dtable {
+    padding: 20px;;
+    background: linear-gradient(to bottom right, #5a6b74, #363e46);
+}
+
+#table_wrapper {
+    border: 1px black solid;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    padding: 20px;
+    max-width: 85%;
+    margin: auto;
+    top: 3%;
+    background-color: rgb(219, 219, 236);
+}
+
+form {
+    padding: 10px;
+}
+#table_wrapper tbody {
+    text-align: center;
+}
+
+.imageTable {
+    width: 30px;
+    height: 30px;
+}
+
+#formAdd {
+    display: none;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px black solid;
+    width: 40%;
+    background-color: #fff;
+}
+
+#add_user {
+    position: relative;
+    width: 300px;
+    padding: 10px 18px;
+    margin-top: 30px;
+    background-color: #f44336;
+    margin-left: 42%;
+}
+
+#msgValidation {
+    border-radius: 20px;
+    margin: auto;
+    height: 20px;
+    background-color: #dead51;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    border: 1px black solid;
+    width: 40%;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1.2em;
+}

@@ -1,0 +1,126 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+section {
+    color: black;
+    font-size: 1.2em;    
+    background-color: #4C4535;
+    padding-top: 50px;
+}
+
+aside {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+section article {
+    color: black;
+    width: 60%;
+    margin: auto;
+    background-color: #D9D5CA;
+    text-align: left;
+    padding: 50px;
+    border-radius: 30px;
+    height: 80%;
+    overflow: auto;
+    border: 2px white solid;
+}
+
+section p, section ul {
+    margin-bottom: 10px;
+    color: rgb(66, 64, 64);
+}
+
+section h1 {
+    font-size: 1.8em;
+    padding-top: 10px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#astucesVrac {
+    padding-bottom: 50px;
+}
+
+aside + p {
+    margin-top: 70px;    
+}
+
+section article img {
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border: 2px white solid;
+    border-radius: 30px;
+    height: 100%;
+    width: 40%;
+}
+
+section article .legendeImage {
+    text-align: center;
+}
+
+.legendeImage {
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgb(92, 89, 89);
+}
+
+section h1::first-letter, section h2::first-letter, section p::first-letter {
+    color: #dba135;
+}
+
+section h4 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+section ul li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+section li {
+	padding: 36px 0 36px 30px;
+	list-style: none;
+	background-image: url("../images/liImage.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
+    /*--------------------------*/
+    /*     Partie responsive    */
+    /*--------------------------*/
+
+@media screen and (max-width: 700px) {
+    section article {
+        padding: 0px;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    section article ul {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section article img {
+        width: 80%;
+    }
+}

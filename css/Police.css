@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../police/caviar_dreams/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "BlackChancery";
+    src: url("../police/black_chancery/BLKCHCRY.TTF");
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../police/minecraft/Minecraft.ttf");
+}
+
+@font-face {
+    font-family: "Sunday";
+    src: url("../police/Sunday/SUNDAY\ \ Personal\ use.ttf");
+}
+
+p, li {
+    font-family: "Sunday", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texteIntro p{
+    font-family: "Minecraft", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: "BlackChancery", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a {
+    font-family: "CaviarDreams", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

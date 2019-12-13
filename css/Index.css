@@ -1,0 +1,491 @@
+
+    /*-----------------*/
+    /*     Général     */
+    /*-----------------*/
+    
+* {
+    margin : 0;
+    padding : 0;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+header {
+    background-image: url("../images/RLCraft.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    background: linear-gradient(to bottom right, #1d1f20, #202a33);
+}
+
+.pageEntiere {
+    height: 100vh;
+}
+
+.texte {
+    color: rgb(230, 230, 230);
+    font-size: 1.3em;
+}
+
+h1::first-letter, .texte::first-letter {
+    color: #dba135;
+}
+    /*----------------------------*/
+    /*     Pimp des scrollbars    */
+    /*----------------------------*/
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    border-radius: 50%;
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #555;
+}
+
+    /*----------------------------*/
+    /*     Menu de navigation     */
+    /*----------------------------*/
+
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+nav:hover {
+    background-color: rgba(166, 155, 206,0.5);
+    transition: background .3s linear;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(6, 6, 41);
+    display: flex;
+    text-align: center;
+    padding: 0 30px;
+    letter-spacing: 2px;
+    height: 100%;
+    align-items: center;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav li:hover {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #dead51;
+}
+
+    /*----------------------------------*/
+    /*     Sous menu de navigation      */
+    /*----------------------------------*/
+
+/* Tout sauf responsive */
+nav ul li ul {
+    position: absolute;
+    left: -999em;
+    z-index: 1000; 
+    border-radius: 10%;
+    background-color :rgba(166, 155, 206,0.5);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px;
+}
+
+nav ul li ul li {
+    height: 50px;
+    width: 100%;
+}
+nav ul li ul li a{
+    margin: auto;
+}
+
+nav li:hover ul {
+    left: 65%;
+    width: 250px;
+    top: 100px;
+}
+
+    /*--------------------*/
+    /*     1 ere Page     */
+    /*--------------------*/
+
+.texteIntro .logo{
+    vertical-align: -10px;
+}
+
+.texteIntro{
+    color: rgb(240, 241, 246);
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.texteIntro h1 {
+    font-size: 3em;
+}
+
+.texteIntro p {
+    padding-top: 1%;
+    font-size: 1.8em;
+}
+
+    /*-----------------------*/
+    /*     bouton scroll     */
+    /*-----------------------*/
+
+.flecheLien a { /* Lien */
+    display: block;
+    transform: translate(0, -50%);
+    color: #fff;
+    text-decoration: none;
+}
+
+.flecheLien a:hover {
+    opacity: 0.5;
+}
+
+#bouton a span { /* Cercle */
+    position: absolute;
+    left: 49%;
+    margin-top: 1%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+#bouton a span::after { /* Flèche */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+}
+
+    /*--------------------*/
+    /*     2 eme Page     */
+    /*--------------------*/
+
+.texte h1 {
+    font-size: 30px;
+}
+
+.aPropos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: linear-gradient(to bottom right, #1d1f20, #313335);
+    color: rgb(230, 230, 230);
+}
+
+.aPropos .question::first-letter {
+    color: #dba135;
+}
+.texteVideo {
+    margin-top: 2%;
+    width: 20%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.videoConteneur {
+    margin-top: 7%;
+    height: 70%;
+    width: 70%;
+}
+
+aside iframe{ /* Vidéo de présentation */
+    border: 2px white solid;
+    width: 100%;
+    height: 100%;
+}
+
+.aPropos article p {
+    margin-top: 8px;
+}
+
+.aPropos .question {
+    font-size: 25px;
+}
+
+    /*------------------------------*/
+    /*     Bouton scroll to top     */
+    /*------------------------------*/
+
+#boutonDebut {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;        /* Le bouton est caché par défaut */
+    visibility: hidden;
+}
+
+#boutonDebut::after {
+    content: "\f077";  /* Flèche vers le bas */
+    font-family: FontAwesome;
+    font-size: 2em;    /* Taille de la flèche */
+    line-height: 50px; /* Centre la flèche dans le bouton */
+    color: #fff;
+}
+
+#boutonDebut:hover {
+    cursor: pointer;
+    background-color:  rgb(250, 179, 71);
+}
+
+#boutonDebut.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+    /*-----------------------------------*/
+    /*     3 eme page : Installation     */
+    /*-----------------------------------*/
+
+#installation {
+    padding-top: 30px;
+}
+
+.installationContenu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#installation h1 {
+    font-size: 30px;
+    color: rgb(230, 230, 230);
+}
+
+#installation h2 {
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.enTete {
+    text-align: center;
+    padding: 10px;
+    color: rgb(230, 230, 230);
+}
+
+.flexItem {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    width: 40%;
+    height: 70%;
+    overflow: auto;
+}
+.texteInstallationTwitch ul li, .texteInstallationMinecraft ul li{
+    padding: 2px 0 2px 30px;
+	list-style: none;
+	background-image: url("../images/liImage.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
+
+.texteInstallationTwitch ul , .texteInstallationMinecraft ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.texteInstallationTwitch img , .texteInstallationMinecraft img {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.texteInstallationMinecraft a {
+    text-decoration: underline;
+    color: rgb(230, 230, 230);
+}
+
+article .imgInstallation {
+    border: 2px black solid;
+    border-radius: 5%;
+}
+    /*---------------------*/
+    /*     Partie Footer   */
+    /*---------------------*/
+
+footer {
+    color: black;
+    text-align: center;
+    border-top: 1px solide black;
+    height: auto;
+    background-color: #313335;
+    width: auto;
+}
+
+footer p {
+    padding-top: 1%;
+}
+.iconesFooter {
+    margin-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.iconesFooter img {
+    margin-left: 20px;
+    height: 50px;
+    widows: 50px;
+}
+
+    /*--------------------------*/
+    /*     Partie responsive    */
+    /*--------------------------*/
+
+@media screen and (max-width: 1030px) {
+    .texteVideo{ /* On affiche le texte a gauche de la vidéo au dessus de celle ci, et la vidéo prends plus d'espace*/
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .videoConteneur{
+        width: 100%;
+        height: 50%;
+        margin: auto;
+        padding-top: 60px;
+    }
+
+    header { /* Recentrage du background */
+        background-size: auto 100%;
+        background-position: center;
+    }
+
+    .aPropos {
+        display: block;
+    }
+
+    #videoPresentation{
+        height: 180vh;
+    }
+
+    /* Le menu retrécie */
+    nav ul li:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    nav a{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    article .imgInstallation { /* On n'affiche pas les images dans la partie installation */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .installationContenu { /* Les types d'installation passe en display block et prennent plus de largeur */
+        display: block;
+        height: 40%;
+    }
+
+    .flexItem {
+        margin-top: 3%;
+        margin-right: 1%;
+        width: 95%;
+        height: 85%;
+    }
+
+    #installation h1 {
+        font-size: 20px;
+    }
+    
+    #installation{
+        height: 150vh;
+    }
+
+    #videoPresentation{
+        height: 180vh;
+    }
+    
+    .videoConteneur {
+        margin-top: 30px;
+    }
+
+    .texteVideo{
+        font-size: 1em;
+        height: 38%;
+    }
+
+    .texteIntro { /* On remonte le texte d'intro et on passe en menu burger*/
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .texteIntro h1 { /* Le texte de l'intro de la 1ère page est moins gros et l'icone de scroll est re-centré */
+        font-size: 2.5em;
+    }
+    
+    .texteIntro p {
+        padding-top: 1%;
+        font-size: 1.3em;
+    }
+
+    #bouton a span {
+        left: 45%;
+    }
+
+    nav ul li:nth-child(3){
+        display: none;
+    }
+}
