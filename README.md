@@ -12,7 +12,9 @@
 > - Cette onglet est disponnible qu'au adminisatrateur
 > - Il leur permet de créer, modifier, supprimer un utilisateur
 > - La page est gérrer en Ajax, il n'y a donc pas besoin de recharger la page pour voir les modifications apparaitre
-> - L'affichage des utilisateurs présent dans la base de données est gerré grace a une DataTable, il suffit de cliquer sur les boutons supprimer pour "bannir" un utilisateur. La colonne Edit permet d'ouvrir le formulaire de modification (Seul le droit de l'utilisateur est modifiable pour l'instant). Pour finir le bouton en dessous du DataTable permet d'ouvrir le formulaire qui ajoutera un utilisateur
+> - L'affichage des utilisateurs présent dans la base de données est gerré grace a une DataTable, il suffit de cliquer sur les boutons supprimer pour "bannir" un utilisateur. 
+      La colonne Edit permet d'ouvrir le formulaire de modification (Seul le droit de l'utilisateur est modifiable pour l'instant). 
+      Pour finir le bouton en dessous du DataTable permet d'ouvrir le formulaire qui ajoutera un utilisateur
 
 
 
